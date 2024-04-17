@@ -1,0 +1,186 @@
+/* 
+Tipografías:
+    ● Raleway (sacar desde Google Fonts).
+font-weight:
+    ● Raleway Light (300).
+    ● Raleway Medium (500).
+Colores:
+    ● #000000.
+    ● #ffffff.
+    ● #1e1a13.
+Iconos (Font Awesome):
+    ● far fa-eye.
+    ● fab fa-hand-peace. no existe se llama "fab fa-angellist"
+    ● fas fa-paint-brush. 
+
+
+Requerimientos
+1. Estructura de carpeta.
+    ● /assets/img para las imágenes.
+    ● /assets/css/style.css para el archivo CSS.
+    ● /iguana.html para la vista principal.
+
+2. Etiquetas semánticas: Utilizar correctamente las etiquetas semánticas para definir
+las distintas secciones de la página.
+
+3. Clases específicas: Se evaluarán colores de fondo y/o color de elementos, pero el
+evaluador sólo los podrá comprobar si existen las siguientes clases:
+    ● desc-section (En la sección de descripción), debes utilizar el color de fondo
+      correcto e indicarlo en formato hexadecimal.
+    ● footer (En la sección final), debes utilizar el color específico para los
+      elementos de esta sección.
+    ● Los elementos h1, h2 y p de tu página deben tener el color indicado.
+    ● icons-section (En la sección de íconos), debes utilizar el color de fondo
+      correcto e indicarlo en formato hexadecimal.
+    ● Debes utilizar los íconos mencionados, con sus respectivas clases de
+      font-awesome.
+
+      4. Fuentes y tamaños: Debes usar la fuente Raleway, con sus respectivos pesos
+(font-weight) y tamaños (font-size), donde corresponda.
+*/
+
+
+body{
+  text-align: center;
+  color: #000f08;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+body *{
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+/* INI HERO SECTION */
+.hero-section{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oscuro{
+  background: #000000;
+  color:#ffffff ;
+}
+
+.tamanioimg{
+  width: 100%;
+}
+
+div h2{
+  font-weight: 221px;
+  font-size: 3.68em;
+  margin-bottom: 0.25em;
+}
+/* FIN HERO SECTION */
+
+
+/* INI DESC SECTION */
+.desc-section{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  background:#000000;
+  text-align: left;
+  color:#ffffff ;
+  padding: 50px;
+  white-space: nowrap;
+}
+
+.centrado{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.iguana-texto{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  width: 40%;
+  vertical-align: middle;
+  margin-left: 2.5%;
+  white-space: normal;
+  padding-right: 100px;
+  font-size: 1rem;
+}
+
+.iguana-imagen{
+  width: 399px;
+  height: 237px;
+  vertical-align: middle;
+  margin:0;
+}
+/* FIN DESC SECTION */
+
+
+/* INI TRES IGUANAS */
+div h1{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 356;
+  font-size: 2.93em;
+  padding-top: 75px;
+  padding-bottom: 74px;
+}
+
+.desc-caracteristicas{
+  display:flex;
+  flex-direction: column;
+  background: #1e1a13;
+  color:#ffffff ;
+}
+
+.iconos-fila{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.iconos-caracteristica{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.iconos-texto{
+  padding-top: 20px;
+  padding-bottom: 74px;
+}
+
+.iconos-separacion{
+  display:flex;
+  justify-content: space-between;
+}
+
+.iguana-tresimagenes{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding:73px 16px;
+}
+
+.iguana-tamannio{
+  width: 300px;
+  height: 202px;
+}
+/* FIN TRES IGUANAS */
+
+
+/* INI FOOTER */
+.alinear-footer{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  padding-top:39px;
+  padding-right:0px;
+  padding-bottom:39px;
+  padding-left:0px;
+  opacity: 1;
+}
+/* FIN FOOTER */
